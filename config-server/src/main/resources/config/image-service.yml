@@ -13,7 +13,7 @@ amazon:
             name: twitterclonestorage
     aws:
         access-key: AKIATP4TDBGPAJUNI5EY
-        secret-key: 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
+        secret-key: secret
 
 eureka:
     client:
