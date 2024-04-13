@@ -74,25 +74,32 @@
 
 # About the Project
 
+This is a twitter clone!
+
 ![Home page](https://i.ibb.co/vBsQTZT/1-Preview.jpg)
 
+___
+# Stack:
 
-## Stack:
 
-* Back-end: Java 17, Spring (Boot, Cloud, Data, Security), JPA / Hibernate, PostgreSQL, JUnit, Mockito
-* Front-end: TypeScript, React.js, Redux-Saga, Material-UI, Jest, Enzyme
-* Security: JWT
-* AWS S3 bucket
-* Docker
+Front-end
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+Back-end
+
+![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white)![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+___
 ## What's included
 
 - [X] Authentication with JWT and Email validation. Password change.
 - [X] Users can Add tweets, Like, Retweet, Reply, Quote tweets, Schedule tweets.
 - [X] Users can Delete tweets, Send tweet via Direct Message, Add tweet to Bookmarks.
-- [X] Users can Create Lists, Edit Lists, Add other users to Lists, Follow List, Pin Lists.
+- [X] List functionality: Create, Edit, Follow, Pin, Add users
 - [X] Users get notifications when someone subscribed, retweet or liked tweet.
 - [X] Users can add Images to tweet, Create Poll and vote, Post tweets with link preview, Posts tweets with YouTube video link.
 - [X] Websocket online chats.
@@ -113,21 +120,21 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+___
+# Installation
 
-## Installation
+## Prerequisites:
 
-### Prerequisites:
-Install:
+Install, if you do not have:
 
-![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) ([link](https://www.baeldung.com/install-maven-on-windows-linux-mac)), 
+- [Install maven](https://www.baeldung.com/install-maven-on-windows-linux-mac)
+- [Install java 17](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)
+- [Install postgres](https://www.postgresql.org/download/)
+- [Install intellij IDEA](https://www.jetbrains.com/idea/)
+- [Install npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+#### Also, have these accounts:
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ([link](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)), 
-Postgresql ([link](https://www.postgresql.org/download/)), 
-Intellij IDEA ([link](https://www.jetbrains.com/idea/)), 
-Docker and Docker Desktop, 
-node.js and npm ([link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)). 
-
-Also, have a gmail and AWS account.
+![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 ### Set up java environment for spring framework:
 1. In Intellij: select `settings`>`plugins`. add the Lombok plugin.
