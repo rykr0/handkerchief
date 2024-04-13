@@ -74,10 +74,6 @@
 
 # About the Project
 
-Twitter clone developed with a microservice approach using the Spring Framework and React.js. </br>
-The project is always updated with new features. </br>
-See more demo screenshots below.
-
 ![Home page](https://i.ibb.co/vBsQTZT/1-Preview.jpg)
 
 
@@ -112,8 +108,7 @@ See more demo screenshots below.
 - [ ] Advanced search
 - [ ] User mentions
 - [ ] Tweet thread
-- [ ] Front-end refactoring
-- [ ] Back-end refactoring
+- [ ] Refactoring
 - [ ] Adaptive layout
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -122,47 +117,60 @@ See more demo screenshots below.
 ## Installation
 
 ### Prerequisites:
-1. Install Maven ([link](https://www.baeldung.com/install-maven-on-windows-linux-mac)), Java ([link](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)), Postgresql ([link](https://www.postgresql.org/download/)), Intellij IDEA ([link](https://www.jetbrains.com/idea/)), Docker and Docker Desktop, node.js and npm ([link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)). Also, have a gmail and AWS account.
+Install:
+
+![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) ([link](https://www.baeldung.com/install-maven-on-windows-linux-mac)), 
+
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ([link](https://www.oracle.com/java/technologies/javase/jdk15-archive-downloads.html)), 
+Postgresql ([link](https://www.postgresql.org/download/)), 
+Intellij IDEA ([link](https://www.jetbrains.com/idea/)), 
+Docker and Docker Desktop, 
+node.js and npm ([link](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)). 
+
+Also, have a gmail and AWS account.
 
 ### Set up java environment for spring framework:
-4. Add Lombok plugin to the Intellij IDEA: [link](https://i.ibb.co/Gtwcw0t/6-lombok.jpg)
-3. In project structure, select Java 17.
-4. Build the project with Maven.
+1. In Intellij: select `settings`>`plugins`. add the Lombok plugin.
+2. In Intellij: select `project structure`. select Java 17.
+3. Build the project with Maven.
 ### Set up containers:
-5. In the docker-compose file [link](https://github.com/merikbest/twitter-spring-reactjs/blob/microservice/docker-compose.yml) run 4 services: `postgres`, `pgadmin`, `zipkin`, `rabbitmq` [link](https://i.ibb.co/tCCXJLk/9-Docker-Desktop.png)
+4. In the docker-compose file (or in Docker desktop), run the four services: `postgres`, `pgadmin`, `zipkin`, `rabbitmq` [link](https://i.ibb.co/tCCXJLk/9-Docker-Desktop.png)
 ### Set up DB:
-6. Open http://localhost:5050/browser/ and create DBs: `user`, `tweet`, `chat`, `lists`, `notification`, `tag`, `topic`
+5. Open http://localhost:5050/browser/ and create these databases: `user`, `tweet`, `chat`, `lists`, `notification`, `tag`, `topic`
 
 ### Set Up AWS:
-7. Create a new AWS S3 bucket: [link](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html)
-8. Change access from private to public in the AWS S3 bucket
-9. Add a public access policy to the AWS S3 bucket (!!!important!!! see:
-   [doc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-overview.html),
-   [github examle](https://stackoverflow.com/questions/58580042/how-to-set-public-read-only-access-on-amazon-s3-bucket#:~:text=To%20make%20objects%20publicly%20accessible%2C%20use%20a%20policy%20like%20this%3A) or
-   [my example](https://i.ibb.co/mSpHmyL/12-bucket.jpg))
-10. Get AWS keys: [link](https://supsystic.com/documentation/id-secret-access-key-amazon-s3/) and add to the application.properties file: [link](https://i.ibb.co/zHw537K/13-key.jpg)
-11. In the [image-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/image-service.yml#L13) add bucket, access-key, secret-key properties
+6. Create a new AWS S3 bucket. Change its access from private to public.
+7. Add a public access policy to the AWS S3 bucket ([doc](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-policy-language-overview.html), [github examle](https://stackoverflow.com/questions/58580042/how-to-set-public-read-only-access-on-amazon-s3-bucket#:~:text=To%20make%20objects%20publicly%20accessible%2C%20use%20a%20policy%20like%20this%3A))
+8. Get AWS keys ([link](https://supsystic.com/documentation/id-secret-access-key-amazon-s3/)) and add them to the application.properties file ([link](https://i.ibb.co/zHw537K/13-key.jpg))
+9. Add the bucket, access-key, and secret-key properties to the [image-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/image-service.yml#L13). 
 
-### Google:
-12. Create google API keys: [link](https://developers.google.com/youtube/v3/getting-started#before-you-start)
-13. Add google API key to the [tweet-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/tweet-service.yml#L27)
-14. Add gmail account and password to the [email-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/email-service.yml#L11)
-15. Go to [link](https://myaccount.google.com/u/2/lesssecureapps) (important) and change to: “Allow less secure apps: ON”
+### YouTube Data API (for video embedding):
+10. Go to the Google Cloud console. Generate the Youtube Data API key ([link](https://developers.google.com/youtube/v3/getting-started#before-you-start)). Add the key to the [tweet-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/tweet-service.yml#L27)
+11. Add a gmail account and password to the [email-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/email-service.yml#L11). Note that it is better practice to use a proper IAM; this feature will be deprecated when Google accounts do not allow less secure applications [link](https://myaccount.google.com/u/2/lesssecureapps).
 
 ### NPM, run
-16. Open terminal in frontend directory and type: npm install (or yarn install)
-17. Run services in this order:
+
+12. Open terminal.
+```
+cd frontend
+npm install (or yarn install)
+```
+13. In Intellij, run (Spring Boot) services in this order:
     - eureka-server
     - config-server
     - api-gateway
     - user-service
     - and then all other services in any order [link](https://i.ibb.co/jRhYMd9/24-microservices-run.png)
-18. Open terminal in frontend directory and type: npm start or run via [package.json](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/frontend/package.json#L73)
-19. Navigate to http://localhost:3000/home
+    - 
+14. Terminal once more.
+```
+cd frontend
+npm start
+```
+15. http://localhost:3000/home
 
-#### To enter the application you can register or login:
-Login: user2016@gmail.com  
-Password: qwerty123
+    (Default) Login: user2024@gmail.com  
+    (Default) Password: qwerty123
 
 ## Screenshots
 
