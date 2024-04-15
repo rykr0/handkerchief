@@ -36,35 +36,24 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABLE OF CONTENTS 
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#Stack">Stack</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="##What's included">What's included</a></li>
+        <li><a href="##What's not included">What's not included</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#stack">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#note: why i made this">Acknowledgments</a></li>
+    <li><a href="#Installation">Installation</a></li>
+    <li><a href="#note: why I made this">note: why i made this</a></li>
   </ol>
-</details>
+</details>-->
 
 
-___
-# Media
+
 ![Home page](https://i.ibb.co/vBsQTZT/1-Preview.jpg)
 ___
 # Stack:
