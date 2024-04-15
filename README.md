@@ -27,7 +27,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Best-README-Template</h3>
+<h3 align="center">handkerchief</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -74,7 +74,10 @@
 
 # About the Project
 
+Miss the old twitter? Its lightweight, liberal, 
+
 This is a twitter clone!
+
 
 ![Home page](https://i.ibb.co/vBsQTZT/1-Preview.jpg)
 
@@ -96,27 +99,23 @@ Back-end
 ___
 ## What's included
 
-- [X] Authentication with JWT and Email validation. Password change.
-- [X] Users can Add tweets, Like, Retweet, Reply, Quote tweets, Schedule tweets.
-- [X] Users can Delete tweets, Send tweet via Direct Message, Add tweet to Bookmarks.
+- [X] Rudimentary sign-in system with JWT
+- [X] Tweet functionality: add, like, retweet, reply, quote, schedule, delete, send via DM, add to bookmarks
 - [X] List functionality: Create, Edit, Follow, Pin, Add users
-- [X] Users get notifications when someone subscribed, retweet or liked tweet.
-- [X] Users can add Images to tweet, Create Poll and vote, Post tweets with link preview, Posts tweets with YouTube video link.
-- [X] Websocket online chats.
-- [X] Private user profile and lists.
-- [X] Account Settings.
-- [X] Users can subscribe to each other.
-- [X] User can edit profile.
-- [X] User can block and mute other users.
-- [X] Users can customize site color scheme and color background. 
-- [X] Users can search tweets by hashtags and search other users and users tweets.
-- [X] All images downloads on Amazon S3 bucket.
+- [X] Customizable email notification settings (not scalable)
+- [X] Tweet multimedia support: images (are put on a Amazon S3 bucket (can be improved)), poll, link preview, youtube video link (uses Youtube API, better to have its own embedded video player).
+- [X] User functionality: follow, block, mute
+- [X] Profile functionality: edit, save, 
+- [X] Site has customizable color scheme (DARK MODE ftw) 
+- [X] Account Settings
+  - How does twitter's 
 
-- [ ] Advanced search
-- [ ] User mentions
+## What's not included
+
+- [ ] Search (though, lets be real, twitter's current search functionalities really sucks, and the platform would probably be better with a 4chan-style board/search)
+- [ ] User mentions ("@*")
 - [ ] Tweet thread
-- [ ] Refactoring
-- [ ] Adaptive layout
+- [ ] "Refactoring"
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,15 +159,17 @@ Install, if you do not have:
 12. Open terminal.
 ```
 cd frontend
-npm install (or yarn install)
+npm install
+# or, yarn install
 ```
 13. In Intellij, run (Spring Boot) services in this order:
     - eureka-server
     - config-server
     - api-gateway
     - user-service
-    - and then all other services in any order [link](https://i.ibb.co/jRhYMd9/24-microservices-run.png)
-    - 
+    
+    ... and then all other services in any order.
+
 14. Terminal once more.
 ```
 cd frontend
