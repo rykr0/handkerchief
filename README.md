@@ -23,23 +23,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/rykr0/handkerchief">
+    <img src="sample_images/twitter_x_bird.png" alt="Logo" width="" height="">
+    <h3 align="center">handkerchief</h3>
   </a>
 
-<h3 align="center">handkerchief</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    A twitter-clone framework built on React.js and Java!
   </p>
 </div>
 
@@ -67,20 +58,14 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#note: why i made this">Acknowledgments</a></li>
   </ol>
 </details>
 
 
-# About the Project
-
-Miss the old twitter? Its lightweight, liberal, 
-
-This is a twitter clone!
-
-
+___
+# Media
 ![Home page](https://i.ibb.co/vBsQTZT/1-Preview.jpg)
-
 ___
 # Stack:
 
@@ -108,7 +93,6 @@ ___
 - [X] Profile functionality: edit, save, 
 - [X] Site has customizable color scheme (DARK MODE ftw) 
 - [X] Account Settings
-  - How does twitter's 
 
 ## What's not included
 
@@ -154,7 +138,7 @@ Install, if you do not have:
 10. Go to the Google Cloud console. Generate the Youtube Data API key ([link](https://developers.google.com/youtube/v3/getting-started#before-you-start)). Add the key to the [tweet-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/tweet-service.yml#L27)
 11. Add a gmail account and password to the [email-service.yml config file](https://github.com/merikbest/twitter-spring-reactjs/blob/391ddc666a79057615322898ea2715f1178fdb03/config-server/src/main/resources/config/email-service.yml#L11). Note that it is better practice to use a proper IAM; this feature will be deprecated when Google accounts do not allow less secure applications [link](https://myaccount.google.com/u/2/lesssecureapps).
 
-### NPM, run
+### NPM, then run:
 
 12. Open terminal.
 ```
@@ -180,68 +164,27 @@ npm start
     (Default) Login: user2024@gmail.com  
     (Default) Password: qwerty123
 
-## Screenshots
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### Add tweet
-![AddTweet](https://i.ibb.co/D51M0Q5/2-Add-tweet.jpg)
 ___
-#### Add Poll
-![AddTPoll](https://i.ibb.co/Dw8B0Qf/3-Add-Poll.jpg)
-___
-#### Reply tweet
-![Reply](https://i.ibb.co/SR3qtMG/4-Reply-tweet.jpg)
-___
-#### Tweet image modal
-![TweetImageModal](https://i.ibb.co/gZD9L6p/5-Tweet-image-modal.jpg)
-___
-#### Notifications
-![Notifications](https://i.ibb.co/8Y8CLyj/6-Notifications.jpg)
-___
-#### Full Notifications
-![FullNotifications](https://i.ibb.co/dKZjYCF/7-Full-Notifications.jpg)
-___
-#### Search
-![Search](https://i.ibb.co/MCk2r0q/8-Search.jpg)
-___
-#### Search Videos
-![SearchVideos](https://i.ibb.co/pnFN638/9-Search-Videos.jpg)
-___
-#### Full tweet
-![FullTweet](https://i.ibb.co/SN5Z3bD/10-Full-tweet.jpg)
-___
-#### Liked by Modal window
-![LikedByModalWindow](https://i.ibb.co/vYts3qF/11-Liked-by-Modal-window.jpg)
-___
-#### Following and Followers
-![FollowingAndFollowers](https://i.ibb.co/BjMSzf3/12-Following-and-Followers.jpg)
-___
-#### Trends
-![Trends](https://i.ibb.co/BfJPZ8G/13-Trends.jpg)
-___
-#### Bookmarks
-![Bookmarks](https://i.ibb.co/crYxw7V/14-Bookmarks.jpg)
-___
-#### Chat
-![Chat](https://i.ibb.co/PM6qZ8n/15-Chat.jpg)
-___
-#### Lists
-![Lists](https://i.ibb.co/ftpCZj8/16-Lists.jpg)
-___
-#### Full List
-![FullList](https://i.ibb.co/WVZrRX7/17-Full-List.jpg)
-___
-#### Suggested Lists
-![SuggestedLists](https://i.ibb.co/rsrgqZn/18-Suggested-Lists.jpg)
-___
-#### Settings
-![Settings](https://i.ibb.co/r3BRZnM/19-Settings.jpg)
-___
-#### Customization
-![Customization](https://i.ibb.co/bsqWhmN/20-Profile-Customization.jpg)
-___
-#### Dark theme profile
-![Customization](https://i.ibb.co/h1z1BCT/21-Profile-with-color-theme.jpg)
+# note: why I made this
 
+x sucks.
+
+here are principles you should live by (aka my needless virtue-signaling):
+- don't instagramify. you dont need to compete against tiktok with a variant of reels.
+- don't have bloated ux! 'the everything app' kills (seemingly) lightweight legacies.
+- don't be a twitter-ui-inspired derivative pornography clone (onlyfans, fansly, etc.) with no conception of content discovery.
+- dont take government subsidies, lest you are making a honeypot
+- try not to have your two largest content ecosystems be politics and porn --- given their controversial and non-commercial nature. 
+- dont rely on decades-old techno-humanist marketing ploys as the lowest-common-dominator in society does not use technology.
+- and, most stereotypically, and above all else: the network that generates culture and promotes content discovery controls the web!
+
+god died in the 1800s. and now x is on life support.
+
+cheers.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
